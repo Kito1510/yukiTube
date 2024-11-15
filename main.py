@@ -10,7 +10,7 @@ from cache import cache
 import urllib.request
 
 invidiousjson = "https://api.invidious.io/instances.json?pretty=1&sort_by=type,users";
-apis = [r"https://invidious.materialio.us/",r"https://inv.nadeko.net/"]
+apis = [r"https://invidious.materialio.us/",r"https://inv.nadeko.net/",r"https://invidious.nerdvpn.de/"]
 try:
     with urllib.request.urlopen(invidiousjson) as response:
         body = json.loads(response.read())
